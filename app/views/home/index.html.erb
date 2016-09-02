@@ -16,3 +16,11 @@
 	<%= f.submit %>
 	</p>
 <% end %>
+
+<% for entry in @entries %>
+<hr>
+<p><%= entry.name %> signed the guestbook blerp ago<p>
+
+<p><%= entry.message %>
+
+<% end %>
