@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'messages/index'
+
   get 'home/index'
-  resources :entries
+  resources :entries, :messages
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
