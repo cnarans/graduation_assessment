@@ -20,8 +20,8 @@
 
 <% for entry in @entries %>
 <hr>
-<p><%= entry.name %> signed the guestbook <%= time_ago_in_words(entry.created_at) %> ago<p>
+<p><%= entry.name %> signed the guestbook <%= time_ago_in_words(entry.created_at) %> ago:<p>
 
-<p><%= entry.message %>
+<p>"<%= entry.message %>"</p>
 
 <% end %>
